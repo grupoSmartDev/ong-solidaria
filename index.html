@@ -12,10 +12,13 @@
       content="ONG, voluntariado, ação social, doações, projetos sociais"
     />
     <title>ONG Solidária - Início</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
+      <!-- Menu Mobile Toggle -->
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-hamburger">
         <span></span>
@@ -50,6 +53,14 @@
           Há mais de 15 anos dedicados a transformar realidades e promover
           desenvolvimento social em comunidades vulneráveis.
         </p>
+      </section>
+
+      <!-- Container para estatísticas dinâmicas -->
+      <section>
+        <h2>Nosso Impacto</h2>
+        <div id="estatisticas-container">
+          <!-- Será preenchido dinamicamente pelo templates.js -->
+        </div>
       </section>
 
       <section>
@@ -131,24 +142,10 @@
       </section>
 
       <section>
-        <h2>Nosso Impacto</h2>
-
-        <article>
-          <h3>Números que Transformam</h3>
-          <dl>
-            <dt>Pessoas Beneficiadas</dt>
-            <dd>Mais de 50.000 vidas impactadas diretamente</dd>
-
-            <dt>Voluntários Ativos</dt>
-            <dd>500+ voluntários dedicados em todo o país</dd>
-
-            <dt>Projetos em Andamento</dt>
-            <dd>25 projetos ativos em diversas áreas</dd>
-
-            <dt>Comunidades Atendidas</dt>
-            <dd>80 comunidades em 12 estados brasileiros</dd>
-          </dl>
-        </article>
+        <h2>Depoimentos</h2>
+        <div id="depoimentos-container">
+          <!-- Será preenchido dinamicamente pelo templates.js -->
+        </div>
       </section>
 
       <section>
@@ -301,5 +298,11 @@
         </nav>
       </section>
     </footer>
+
+    <!-- JavaScript Modular - ORDEM IMPORTA! -->
+    <script src="/js/validacao.js"></script>
+    <script src="/js/templates.js"></script>
+    <script src="/js/spa.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
