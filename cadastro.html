@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cadastre-se como voluntário na ONG Solidária e faça parte da transformação social"
+    />
+    <meta
+      name="keywords"
+      content="cadastro voluntário, inscrição ONG, voluntariado, ação social"
+    />
+    <title>Cadastro de Voluntário - ONG Solidária</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>ONG Solidária</h1>
+        <p>Transformando vidas, construindo futuros</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos Sociais</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Cadastro de Voluntário</h2>
+        <img
+          src="imagens/cadastro-banner.png"
+          alt="Pessoas preenchendo formulário de voluntariado"
+          width="800"
+          height="350"
+        />
+        <p>
+          Seja bem-vindo(a)! Estamos muito felizes com seu interesse em fazer
+          parte do nosso time de voluntários. Preencha o formulário abaixo com
+          atenção para iniciarmos sua jornada conosco.
+        </p>
+      </section>
+
+      <section>
+        <h3>Antes de Começar</h3>
+        <article>
+          <h4>Informações Importantes</h4>
+          <ul>
+            <li>
+              Todos os campos marcados com <strong>*</strong> são obrigatórios
+            </li>
+            <li>Mantenha seus dados atualizados para facilitar o contato</li>
+            <li>O processo de seleção leva em média 7 dias úteis</li>
+            <li>Após o cadastro, você receberá um e-mail de confirmação</li>
+            <li>
+              Dúvidas? Entre em contato:
+              <a href="mailto:voluntarios@ongsolidaria.org.br"
+                >voluntarios@ongsolidaria.org.br</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h3>Formulário de Inscrição</h3>
+
+        <form
+          action="https://exemplo.com/processar-cadastro"
+          method="post"
+          id="formulario-cadastro"
+        >
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div>
+              <label for="nome">Nome Completo: *</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                required
+                minlength="3"
+                maxlength="100"
+                pattern="[A-Za-zÀ-ÿ\s]+"
+                title="Digite apenas letras e espaços"
+              />
+              <small>Digite seu nome completo como consta nos documentos</small>
+            </div>
+
+            <div>
+              <label for="email">E-mail: *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemplo@email.com"
+                required
+                maxlength="100"
+              />
+              <small>Usaremos este e-mail para entrar em contato</small>
+            </div>
+
+            <div>
+              <label for="cpf">CPF: *</label>
+              <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                placeholder="000.000.000-00"
+                required
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                title="Digite o CPF no formato: 000.000.000-00"
+                maxlength="14"
+              />
+              <small>Formato: 000.000.000-00</small>
+            </div>
+
+            <div>
+              <label for="telefone">Telefone: *</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+                required
+                pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+                title="Digite o telefone no formato: (00) 00000-0000"
+                maxlength="15"
+              />
+              <small>Formato: (00) 00000-0000</small>
+            </div>
+
+            <div>
+              <label for="data-nascimento">Data de Nascimento: *</label>
+              <input
+                type="date"
+                id="data-nascimento"
+                name="data-nascimento"
+                required
+                min="1924-01-01"
+                max="2009-12-31"
+              />
+              <small>Idade mínima: 16 anos</small>
+            </div>
+
+            <div>
+              <label for="genero">Gênero: *</label>
+              <select id="genero" name="genero" required>
+                <option value="">Selecione...</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="nao-binario">Não-binário</option>
+                <option value="prefiro-nao-informar">
+                  Prefiro não informar
+                </option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <div>
+              <label for="cep">CEP: *</label>
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                required
+                pattern="\d{5}-\d{3}"
+                title="Digite o CEP no formato: 00000-000"
+                maxlength="9"
+              />
+              <small>Formato: 00000-000</small>
+            </div>
+
+            <div>
+              <label for="logradouro">Logradouro (Rua/Avenida): *</label>
+              <input
+                type="text"
+                id="logradouro"
+                name="logradouro"
+                placeholder="Ex: Rua das Flores"
+                required
+                minlength="3"
+                maxlength="100"
+              />
+            </div>
+
+            <div>
+              <label for="numero">Número: *</label>
+              <input
+                type="text"
+                id="numero"
+                name="numero"
+                placeholder="Ex: 123"
+                required
+                maxlength="10"
+              />
+            </div>
+
+            <div>
+              <label for="complemento">Complemento:</label>
+              <input
+                type="text"
+                id="complemento"
+                name="complemento"
+                placeholder="Ex: Apto 45, Bloco B"
+                maxlength="50"
+              />
+              <small>Opcional</small>
+            </div>
+
+            <div>
+              <label for="bairro">Bairro: *</label>
+              <input
+                type="text"
+                id="bairro"
+                name="bairro"
+                placeholder="Ex: Centro"
+                required
+                minlength="2"
+                maxlength="50"
+              />
+            </div>
+
+            <div>
+              <label for="cidade">Cidade: *</label>
+              <input
+                type="text"
+                id="cidade"
+                name="cidade"
+                placeholder="Ex: São Paulo"
+                required
+                minlength="2"
+                maxlength="50"
+              />
+            </div>
+
+            <div>
+              <label for="estado">Estado (UF): *</label>
+              <select id="estado" name="estado" required>
+                <option value="">Selecione...</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="TO">Tocantins (TO)</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Formação e Experiência</legend>
+
+            <div>
+              <label for="escolaridade">Escolaridade: *</label>
+              <select id="escolaridade" name="escolaridade" required>
+                <option value="">Selecione...</option>
+                <option value="fundamental-incompleto">
+                  Ensino Fundamental Incompleto
+                </option>
+                <option value="fundamental-completo">
+                  Ensino Fundamental Completo
+                </option>
+                <option value="medio-incompleto">
+                  Ensino Médio Incompleto
+                </option>
+                <option value="medio-completo">Ensino Médio Completo</option>
+                <option value="superior-incompleto">
+                  Ensino Superior Incompleto
+                </option>
+                <option value="superior-completo">
+                  Ensino Superior Completo
+                </option>
+                <option value="pos-graduacao">Pós-Graduação</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="area-formacao">Área de Formação/Curso:</label>
+              <input
+                type="text"
+                id="area-formacao"
+                name="area-formacao"
+                placeholder="Ex: Pedagogia, Medicina, Administração"
+                maxlength="100"
+              />
+              <small
+                >Opcional - Informe se estiver cursando ou já tiver
+                concluído</small
+              >
+            </div>
+
+            <div>
+              <label for="profissao">Profissão/Ocupação:</label>
+              <input
+                type="text"
+                id="profissao"
+                name="profissao"
+                placeholder="Ex: Professor, Estudante, Engenheiro"
+                maxlength="100"
+              />
+              <small>Opcional</small>
+            </div>
+
+            <div>
+              <label for="experiencia-voluntariado"
+                >Já teve experiência com trabalho voluntário?</label
+              >
+              <fieldset>
+                <input
+                  type="radio"
+                  id="exp-sim"
+                  name="experiencia-voluntariado"
+                  value="sim"
+                />
+                <label for="exp-sim">Sim</label>
+
+                <input
+                  type="radio"
+                  id="exp-nao"
+                  name="experiencia-voluntariado"
+                  value="nao"
+                  checked
+                />
+                <label for="exp-nao">Não</label>
+              </fieldset>
+            </div>
+
+            <div>
+              <label for="descricao-experiencia"
+                >Se sim, descreva sua experiência:</label
+              >
+              <textarea
+                id="descricao-experiencia"
+                name="descricao-experiencia"
+                rows="4"
+                cols="50"
+                placeholder="Conte-nos sobre suas experiências anteriores com trabalho voluntário"
+                maxlength="500"
+              ></textarea>
+              <small>Máximo 500 caracteres</small>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Áreas de Interesse e Disponibilidade</legend>
+
+            <div>
+              <label>Áreas de interesse para atuar como voluntário: *</label>
+              <small>Selecione uma ou mais opções</small>
+              <fieldset>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-educacao"
+                    name="areas-interesse"
+                    value="educacao"
+                  />
+                  <label for="area-educacao">Educação e Reforço Escolar</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-saude"
+                    name="areas-interesse"
+                    value="saude"
+                  />
+                  <label for="area-saude">Saúde e Bem-estar</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-assistencia"
+                    name="areas-interesse"
+                    value="assistencia-social"
+                  />
+                  <label for="area-assistencia">Assistência Social</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-comunicacao"
+                    name="areas-interesse"
+                    value="comunicacao"
+                  />
+                  <label for="area-comunicacao">Comunicação e Marketing</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-tecnologia"
+                    name="areas-interesse"
+                    value="tecnologia"
+                  />
+                  <label for="area-tecnologia">Tecnologia e Informática</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-administrativo"
+                    name="areas-interesse"
+                    value="administrativo"
+                  />
+                  <label for="area-administrativo">Administrativo</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-eventos"
+                    name="areas-interesse"
+                    value="eventos"
+                  />
+                  <label for="area-eventos">Organização de Eventos</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="area-captacao"
+                    name="areas-interesse"
+                    value="captacao"
+                  />
+                  <label for="area-captacao">Captação de Recursos</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div>
+              <label for="disponibilidade"
+                >Disponibilidade de tempo semanal: *</label
+              >
+              <select id="disponibilidade" name="disponibilidade" required>
+                <option value="">Selecione...</option>
+                <option value="2-4-horas">2 a 4 horas por semana</option>
+                <option value="4-8-horas">4 a 8 horas por semana</option>
+                <option value="8-12-horas">8 a 12 horas por semana</option>
+                <option value="mais-12-horas">
+                  Mais de 12 horas por semana
+                </option>
+                <option value="esporadico">
+                  Esporádico (eventos e campanhas)
+                </option>
+              </select>
+            </div>
+
+            <div>
+              <label>Período preferencial para atuar:</label>
+              <fieldset>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="periodo-manha"
+                    name="periodo-atuacao"
+                    value="manha"
+                  />
+                  <label for="periodo-manha">Manhã</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="periodo-tarde"
+                    name="periodo-atuacao"
+                    value="tarde"
+                  />
+                  <label for="periodo-tarde">Tarde</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="periodo-noite"
+                    name="periodo-atuacao"
+                    value="noite"
+                  />
+                  <label for="periodo-noite">Noite</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="periodo-fds"
+                    name="periodo-atuacao"
+                    value="fins-de-semana"
+                  />
+                  <label for="periodo-fds">Fins de semana</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div>
+              <label for="habilidades"
+                >Habilidades especiais, talentos ou conhecimentos que gostaria
+                de compartilhar:</label
+              >
+              <textarea
+                id="habilidades"
+                name="habilidades"
+                rows="4"
+                cols="50"
+                placeholder="Ex: Falo inglês fluentemente, sei tocar violão, tenho experiência com redes sociais, etc."
+                maxlength="500"
+              ></textarea>
+              <small>Máximo 500 caracteres</small>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Sua Motivação</legend>
+
+            <div>
+              <label for="motivacao"
+                >Por que você deseja ser voluntário da ONG Solidária? *</label
+              >
+              <textarea
+                id="motivacao"
+                name="motivacao"
+                rows="5"
+                cols="50"
+                placeholder="Compartilhe conosco suas motivações e expectativas"
+                required
+                minlength="50"
+                maxlength="1000"
+              ></textarea>
+              <small>Mínimo 50 caracteres, máximo 1000 caracteres</small>
+            </div>
+
+            <div>
+              <label for="como-conheceu"
+                >Como conheceu a ONG Solidária? *</label
+              >
+              <select id="como-conheceu" name="como-conheceu" required>
+                <option value="">Selecione...</option>
+                <option value="redes-sociais">Redes Sociais</option>
+                <option value="site-busca">
+                  Site de Busca (Google, Bing, etc.)
+                </option>
+                <option value="indicacao">Indicação de Amigo/Familiar</option>
+                <option value="evento">Evento da ONG</option>
+                <option value="midia">Mídia (TV, Rádio, Jornal)</option>
+                <option value="universidade">Universidade/Escola</option>
+                <option value="empresa">Empresa/Trabalho</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Declarações e Termos</legend>
+
+            <div>
+              <input
+                type="checkbox"
+                id="termo-compromisso"
+                name="termo-compromisso"
+                value="aceito"
+                required
+              />
+              <label for="termo-compromisso">
+                Declaro que as informações fornecidas são verdadeiras e
+                comprometo-me a cumprir as normas e diretrizes da ONG Solidária.
+                *
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="autorizacao-imagem"
+                name="autorizacao-imagem"
+                value="autorizo"
+              />
+              <label for="autorizacao-imagem">
+                Autorizo o uso da minha imagem em materiais de divulgação da ONG
+                (fotos, vídeos, redes sociais).
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="politica-privacidade"
+                name="politica-privacidade"
+                value="aceito"
+                required
+              />
+              <label for="politica-privacidade">
+                Li e concordo com a
+                <a href="#" target="_blank">Política de Privacidade</a> e o
+                <a href="#" target="_blank">Termo de Uso</a> da ONG Solidária. *
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="sim"
+                checked
+              />
+              <label for="newsletter">
+                Desejo receber newsletter com novidades, eventos e oportunidades
+                de voluntariado.
+              </label>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Enviar Cadastro</button>
+            <button type="reset">Limpar Formulário</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h3>Próximos Passos</h3>
+
+        <article>
+          <h4>O que acontece após o cadastro?</h4>
+          <ol>
+            <li>
+              <strong>Confirmação por E-mail:</strong> Você receberá um e-mail
+              confirmando o recebimento do seu cadastro
+            </li>
+            <li>
+              <strong>Análise:</strong> Nossa equipe analisará seu perfil e
+              interesses (até 7 dias úteis)
+            </li>
+            <li>
+              <strong>Entrevista:</strong> Se selecionado, você será convidado
+              para uma entrevista (presencial ou online)
+            </li>
+            <li>
+              <strong>Capacitação:</strong> Participação em treinamento
+              introdutório sobre a ONG e o projeto escolhido
+            </li>
+            <li>
+              <strong>Início das Atividades:</strong> Bem-vindo(a) ao time! Você
+              começará suas atividades voluntárias
+            </li>
+          </ol>
+        </article>
+
+        <article>
+          <h4>Dúvidas Frequentes</h4>
+          <dl>
+            <dt>Menores de 18 anos podem ser voluntários?</dt>
+            <dd>
+              Sim! Aceitamos voluntários a partir de 16 anos, mas menores de 18
+              anos precisam de autorização dos responsáveis.
+            </dd>
+
+            <dt>Preciso ter experiência prévia?</dt>
+            <dd>
+              Não é necessário! Oferecemos treinamento e acompanhamento para
+              todos os voluntários.
+            </dd>
+
+            <dt>Qual é o tempo mínimo de compromisso?</dt>
+            <dd>
+              Solicitamos um compromisso mínimo de 3 meses, com pelo menos 4
+              horas semanais.
+            </dd>
+
+            <dt>Posso escolher o projeto que quero atuar?</dt>
+            <dd>
+              Sim! Durante a entrevista, alinhamos suas preferências com as
+              necessidades da ONG.
+            </dd>
+
+            <dt>Recebo algum tipo de remuneração?</dt>
+            <dd>
+              O trabalho voluntário não é remunerado, mas oferecemos
+              certificados, treinamentos e uma experiência transformadora.
+            </dd>
+          </dl>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        <h2>Precisa de Ajuda?</h2>
+
+        <h3>Contato</h3>
+        <address>
+          <p>
+            <strong>E-mail:</strong><br />
+            <a href="mailto:voluntarios@ongsolidaria.org.br"
+              >voluntarios@ongsolidaria.org.br</a
+            >
+          </p>
+
+          <p>
+            <strong>Telefone:</strong><br />
+            <a href="tel:+551134567890">(11) 3456-7890</a>
+          </p>
+
+          <p>
+            <strong>WhatsApp:</strong><br />
+            <a href="https://wa.me/5511987654321">(11) 98765-4321</a>
+          </p>
+
+          <p>
+            <strong>Horário:</strong><br />
+            Segunda a Sexta: 9h às 18h
+          </p>
+        </address>
+      </section>
+
+      <section>
+        <h3>Documentos Necessários</h3>
+        <p>Para agilizar o processo, tenha em mãos:</p>
+        <ul>
+          <li>RG ou CNH</li>
+          <li>CPF</li>
+          <li>Comprovante de Residência</li>
+          <li>Certificado de Escolaridade (se aplicável)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Depoimentos</h3>
+        <blockquote>
+          <p>
+            "O processo de cadastro foi simples e a equipe muito receptiva. Hoje
+            sou voluntária há 2 anos e não me imagino fazendo outra coisa!"
+          </p>
+          <footer>— Juliana Santos</footer>
+        </blockquote>
+      </section>
+    </aside>
+
+    <footer>
+      <section>
+        <h2>Faça Parte!</h2>
+        <p>Sua jornada de transformação começa aqui.</p>
+      </section>
+
+      <section>
+        <p>&copy; 2025 ONG Solidária. Todos os direitos reservados.</p>
+        <p>CNPJ: 12.345.678/0001-90 | OSCIP | Utilidade Pública Federal</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>
